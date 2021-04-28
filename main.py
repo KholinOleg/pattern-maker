@@ -1,6 +1,6 @@
 class Main:
-    def __init__(self):
-        self.c = int(input("Enter size of pattern ( the number must be odd! ): "))
+    def __init__(self, cords):
+        self.c = cords
         self.x = 0
         self.y = 0
 
@@ -27,7 +27,7 @@ class Main:
 
 
 if __name__ == "__main__":
-    main = Main()
+    main = Main(int(input("Enter size of pattern (the number must be odd!): ")))
     if main.c and main.c % 2 != 0:
         main.draw()
     else:
